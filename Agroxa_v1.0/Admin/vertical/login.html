@@ -1,86 +1,84 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title>foodoyes</title>
-<link rel="shortcut icon" type="image/png" href="images/favicon.jpg" />
-<link href="css/foodoyes.css" rel="stylesheet" type="text/css" />
-<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-<link href="css/animate.css" rel="stylesheet" type="text/css" />
-<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!DOCTYPE html>
+<html lang="en">
 
-<link href="fonts/fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>foodoyes - Admin Dashboard</title>
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <link rel="shortcut icon" href="assets/images/favicon.png">
 
-<body style="background: #EAEAEA; font-family: 'Poppins';" class="mt-5 ">
+        <link rel="stylesheet" href="../plugins/morris/morris.css">
+        <script src="https://kit.fontawesome.com/1544710627.js" crossorigin="anonymous"></script>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <!--akshay css file-->
+        <link href="assets/css/akshay.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    </head>
+
+<body >
     
 
       
    
-  <div class="card col-4 shadow mx-auto  position-relative" style=" border-radius: 21px;" >    
-            <div class="card-body mx-auto"> 
-                <div class="row  ">
-                    <div class="col-3 p-3 position-absolute top-0 start-50 translate-middle mx-auto rounded-circle" style=" border-radius: 50%; background: #F8F8F8; border:5px solid #EAEAEA;">
-                        
-                        <img src="images/foodoyes-logo.png" >
+
+
+    <section class="vh-100 gradient-custom">
+        <div class="container pt-5 h-100 ">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card">
+                <div class="card-body text-center">
+                    <div class="">
+                        <img src="assets/images/logo213.png"  class="rounded img-fluid" alt="...">
+                      </div>
+      
+                  <div class=" mb-3 md-5 md-4 ">
+      
+                    <h2 class="fw-bold mb-2 text-dark font7">Login to your Account</h2>
+                    <p class=" mb-4 font5">Foodoyes your own food Delivery App</p>
+      
+                    <div class="form-outline form-white mb-4 text_left font4 pl-5 pr-5">
+                      <label class="form-label pl-3 text-dark" for="typeEmailX">User Name</label>
+                      <input type="email" id="typeEmailX" class="form-control form-control-lg text-light" placeholder="Enter Username"/>
                     </div>
-            </div>
-            <div class="row  mt-2 mx-auto  ">
-                <div class="col-12  text-center">
-                     <p class="mt-5 h1 font-weight-bold" style="font-weight: 700;">Login to your Account</p>
-                </div>
-            </div>
-            <div class="row  mb-3">
-                <div class="col-9  mx-auto text-center">
-                     <p class="h6" style="font-weight: 500;">Foodoyes your own food Delivery App</p>
-                </div> 
-            </div>
-                
+      
+                    <div class="form-outline form-white mb-4 text_left font4 pl-5 pr-5">
+                      <label class="form-label pl-3 text-dark" for="typePasswordX">Password</label>
+                      <input type="password" id="typePasswordX" class="form-control form-control-lg text-light" placeholder="Enter Password" />
+                    </div>
 
-              
-            <div class="row mb-3 ">
-                <div class="col-9  mx-auto">
-                    <label class="form-label small">User Name</label>
-                    <input class="form-control small "  placeholder="Enter Username" type="text" name="username"required>
-                </div> 
-                
-            </div>
-
-            <div class="row ">
-                <div class="col-9  mx-auto">
-                      <label class="form-label small" >Password</label>
-                    <input class="form-control small "  placeholder="Enter Password" type="text" name="password"required>
-                </div> 
-                
-            </div>
-
-            <div class="row ps-5 pe-5 pt-3 gx-2 ">
-
-                        <div class="col-5  ">
-                            <input class="form-check-input small"  type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                            <label class="form-check-label small"  for="flexRadioDefault2">
-                                Remember Me
-                            </label>
+                    <div class="row pt-3 gx-2 pl-5 pr-5">
+                        <div class="col-6 text_left pl-5">
+                            <input class="form-check-input font4 "  type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label font4"  for="flexRadioDefault2">Remember Me</label>
                         </div> 
-
-                        <div class="col-5  d-flex align-items-end flex-column pt-1  small">
-                            
-                            <p class="small ">Forgot Password? </p>
+                        <div class="col-6 font4 text_right">
+                            <label class="">Forgot Password? </label>
                         </div>
+                    </div>
 
-            </div>
  
-            <div class="row mt-2"> 
-                    <button type="button" class="btn col-9  mx-auto mb-3" style=" color:#fff; border: 1px solid #F0024F; background: #F0024F;">Log In</button>
-               
-                
-            </div>
-         
-        </div> 
-    </div> 
+                    <div class="row pt-3 gx-2 pl-1 pr-1 "> 
+                        <button type="button" class="btn col-9  mx-auto theme_clr mb-3 font5 text-light" >Log In</button>
+                    </div>
 
+                    
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 </body>
