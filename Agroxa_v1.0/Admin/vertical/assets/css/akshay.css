@@ -1,6 +1,41 @@
 /* login */
-
-.form-check-input:checked {
-	border-color: #F0024F !important;
-	background-color: #F0024F !important;
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #EAEAEA;
 }
+.card{
+    background-color: #F8F8F8;
+    border-radius: 21px;
+    /* Shadow/1 */
+    box-shadow: 4px 8px 16px rgba(69, 79, 89, 0.04);
+    border-radius: 21px;
+    
+}
+.img-fluid{
+    max-height:120px;
+
+}
+.gradient-custom {
+    /* fallback for old browsers */
+    background:#EAEAEA;
+    }
+
+    .font7{
+        font-weight:700;
+    } 
+    .font5{
+        font-weight:500;
+    }
+    .font4{
+        font-weight:400;
+    }
+    .text_left{
+       text-align: left; 
+    } 
+    .text_right{
+        text-align: right; 
+     } 
+
+.theme_clr {
+    background-color: #F0024F ;
+}  
