@@ -1,0 +1,6 @@
+/* login */
+
+.form-check-input:checked {
+	border-color: #F0024F !important;
+	background-color: #F0024F !important;
+}
