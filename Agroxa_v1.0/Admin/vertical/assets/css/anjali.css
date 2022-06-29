@@ -1,0 +1,25 @@
+.custom-control {
+    
+    min-height: 3.5rem;
+}
+
+.button {
+    background-color: #F0024F;
+    border: none;
+    color: white;
+    padding: 7px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .card-body{
+    padding: 0 !important;
+  }
+  .table thead th{
+    background-color: #dddddd;
+    padding: 15px 12px;
+  }
+  
