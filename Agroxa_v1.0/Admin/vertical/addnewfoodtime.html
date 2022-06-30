@@ -5,10 +5,11 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-        <title>foodoyes - settings</title>
+        <title>foodoyes - Admin Dashboard</title>
         <meta content="Admin Dashboard" name="description" />
         <meta content="Themesbrand" name="author" />
-        <link rel="shortcut icon" href="assets/images/favicon.png">
+        <link rel="shortcut icon" href="assets/images/logo.png">
+
         <link rel="stylesheet" href="../plugins/morris/morris.css">
         <script src="https://kit.fontawesome.com/1544710627.js" crossorigin="anonymous"></script>
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -19,8 +20,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
-
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+                
 
 
     </head>
@@ -46,6 +49,9 @@
     <!-- ============================================================== -->
 
 
+
+
+
             <!-- ============================================================== -->
             <!-- Start right Content here -->
             <!-- ============================================================== -->
@@ -53,54 +59,49 @@
                 <!-- Start content -->
                 <div class="content">
                     <div class="container-fluid">
-                        <div class="row gx-3">
-                            <div class="col-lg-3 col-6 mt-4 mb-4 ml-3">
-                                <input type="text" placeholder="Search... " id="myInput" class="form-control">
+                        
+                        <div class="d-flex pl-2 ">
+                            <div class="p-2 mt-4 ml-auto pr-3 ">
                             </div>
-                            <div class="mt-4 mb-4 ml-3">
-                                <button class="btn">Add a New Time</button>
-                            </div>
-                         </div>
-                                <div class="col-xl-12 ">
-                                    <h4 class=" mb-5 text-dark font4">Settings</h4>
-                                                    <div class="row">
-                                                        <div class="col-3">
-                                                            <p class="mb-1">Restaurant Opening Time</p>
-                                                            <input type="time" class="form-control mb-5">
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <p class="mb-1">Restaurant Closing Time</p>
-                                                            <input type="time" class="form-control mb-5">
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <p class="mb-1">Minimum Order Amount</p>
-                                                            <input type="number" class="form-control mb-5">
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <p class="mb-1">Maximum Delivery Km</p>
-                                                            <input type="number" class="form-control mb-5">
-                                                        </div>
+                        </div>
+                        
+                        <div class="col-xl-12 font7 text-dark mb-3 pl-5">
+                            <h4>Add a New Food Time</h4>
+                        </div>
+                            
+                                <div class="col-xl">
+                                    <div class="card">
+                                        <div class="card-body p-5 ">
+                                            <div class="table-responsive" style="height:25vh ;">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p class="mb-1">Food Time</p>
+                                                        <select class="form-control ak" aria-label="Default select example">
+                                                            <option selected>breakfast</option>
+                                                            <option value="1">launch</option>
+                                                          </select>   
                                                     </div>
-                                                    <div class="row ">
-                                                        <div class="col-3">
-                                                            <p class="mb-1">GST</p>
-                                                            <select class="form-control ak" aria-label="Default select example">
-                                                                <option selected>GST 0</option>
-                                                                <option value="1">GST 12</option>
-                                                                <option value="2">GST 29</option>
-                                                                <option value="3">GST 39</option>
-                                                              </select>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <p class="mb-1">&nbsp;</p>
+                                                    <div class="col-3">
+                                                        <p class="mb-1">Starting Time</p>
+                                                        <input type="time" class="form-control mb-5">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p class="mb-1">Ending Time</p>
+                                                        <input type="TIME" class="form-control mb-5">
+                                                    </div>
 
-                                                            <button class="btn">Add a New Time</button>
-                                                        </div>
-                                                        
-                                                        
-                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="float-right">
+
+                                               <button class="btn grn mr-3">Create New Time</button>
+                                               <button class="btn ">Close</button>
+                                            </div> 
+                                      
+                                        </div>
+                                    </div>
                                 </div>
-                            </div> 
+                            </div>
 
         
                         </div>
@@ -109,8 +110,9 @@
                     </div> <!-- container-fluid -->
 
                 </div> <!-- content -->
-                <!-- footer section -->
-                <footer class="footer"></footer>
+
+                <footer class="footer">
+                </footer>
 
             </div>
 
@@ -134,6 +136,7 @@
         <script src="assets/js/headbar.js"></script>
         <script src="assets/js/sidebar.js"></script>
         <script src="assets/js/footer.js"></script>
+
 
         <script src="../plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
 
