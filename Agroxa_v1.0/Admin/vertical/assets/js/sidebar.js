@@ -38,7 +38,7 @@ function sidebar() {
                             </li>
 
                             <li>
-                                <a href=deliverycharge.html" class="waves-effect"><i class="material-symbols-outlined">
+                                <a href="deliverycharge.html" class="waves-effect"><i class="material-symbols-outlined">
                                 directions_bike
                                 </i><span> Delivery Charge <span class="float-right menu-arrow"></span> </span></a>
 
@@ -67,7 +67,7 @@ function sidebar() {
                             </li>
 
                             <li>
-                                <a href="offer.html" class="waves-effect"><i class="material-symbols-outlined">
+                                <a href="offers.html" class="waves-effect"><i class="material-symbols-outlined">
                                 percent
                                 </i><span> Add Offers </span></a>
                             </li>

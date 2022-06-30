@@ -58,17 +58,11 @@
             <div class="content-page">
                 <!-- Start content -->
                 <div class="content">
-                    <div class="container-fluid">
+                    <div class="container-fluid ">
                             
                         
-                            <div class="d-flex pl-2 ">
-                                    <div class="p-2 mt-4 ml-auto pr-3 ">
-                                        <button class="button">Add a New Charge</button>
-                                    </div>
-                            </div>
-                        
-                            <div class="col-xl-12 font4 text-dark mb-3">
-                                <h4>Delivery Charge</h4>
+                            <div class="col-xl-12 pt-5 font4 text-dark mb-3">
+                                <h4>Food Details</h4>
                             </div>
                             
                                 <div class="col-xl-12">
@@ -79,10 +73,14 @@
                                                     <thead class="text-dark font-weight-bold">
                                                         <tr>
                                                         <th></th>
-                                                        <th scope="col">Minimum Distance</th>
-                                                        <th scope="col">Maximum Distance</th>
-                                                        <th scope="col">Delivery Charge</th>
-                                                        <th scope="col" >Action</th>
+                                                        <th scope="col">Item Name</th>
+                                                        <th scope="col">Unit</th>
+                                                        <th scope="col">Quantity</th>
+                                                        <th scope="col" >Price</th>
+                                                        <th scope="col" >Custom Message</th>
+                                                        <th scope="col" >Total</th>
+
+
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -94,13 +92,13 @@
                                                                     </label>
                                                                 </div>
                                                             </td>
-                                                            <td >1 Km</td>
-                                                            <td>1 Km</td>                                                          
-                                                            <td>&#8377;8.00</td>
-                                                             <td>
-                                                                <a href="#" class="btn btn-warning btn-sm mr-2">Edit</a>
-                                                                <a href="#" class="btn btn-primary btn-sm ">Delete</a>
-                                                            </td>
+                                                            <td >Masala Dosa</td>
+                                                            <td>Protion</td>                                                          
+                                                            <td>2</td>
+                                                            <td>&#8377;150</td>
+                                                            <td>More Masala</td>
+                                                            <td>&#8377;300</td>
+
                                                         </tr>
 
                                                         <tr>
@@ -111,13 +109,14 @@
                                                                     </label>
                                                                 </div>
                                                             </td>
-                                                            <td >1 Km</td>
-                                                            <td>1 Km</td>                                                          
-                                                            <td>&#8377;16.00</td>
-                                                             <td>
-                                                                <a href="#" class="btn btn-warning btn-sm mr-2">Edit</a>
-                                                                <a href="#" class="btn btn-primary btn-sm ">Delete</a>
-                                                            </td>
+                                                            <td >Beef</td>
+                                                            <td>Half Portion</td>                                                          
+                                                            <td>2</td>
+                                                            <td>&#8377;250</td>
+                                                            <td>Spicey</td>
+                                                            <td>&#8377;300</td>
+
+
                                                         </tr>
 
                                                         <tr>
@@ -128,59 +127,74 @@
                                                                     </label>
                                                                 </div>
                                                             </td>
-                                                            <td >1 Km</td>
-                                                            <td>1 Km</td>                                                          
-                                                            <td>&#8377;24.00</td>
-                                                             <td>
-                                                                <a href="#" class="btn btn-warning btn-sm mr-2">Edit</a>
-                                                                <a href="#" class="btn btn-primary btn-sm ">Delete</a>
-                                                            </td>
-                                                        </tr>
+                                                            <td >Chicken Masala</td>
+                                                            <td>Protion</td>                                                          
+                                                            <td>1</td>
+                                                            <td>&#8377;300</td>
+                                                            <td>Some Sweety</td>
+                                                            <td>&#8377;300</td>
 
-                                                        <tr>
-                                                            <td>
-                                                                <div class="custom-control-lg custom-control custom-checkbox">
-                                                                    <input class="custom-control-input" id="checkbox-large" type="checkbox"/>
-                                                                    <label class="custom-control-label" for="checkbox-large">
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-                                                            <td >1 Km</td>
-                                                            <td>1 Km</td>                                                          
-                                                            <td>&#8377;32.00</td>
-                                                             <td>
-                                                                <a href="#" class="btn btn-warning btn-sm mr-2">Edit</a>
-                                                                <a href="#" class="btn btn-primary btn-sm ">Delete</a>
-                                                            </td>
-                                                        </tr>
 
-                                                        <tr>
-                                                            <td>
-                                                                <div class="custom-control-lg custom-control custom-checkbox">
-                                                                    <input class="custom-control-input" id="checkbox-large" type="checkbox"/>
-                                                                    <label class="custom-control-label" for="checkbox-large">
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-                                                            <td >1 Km</td>
-                                                            <td>1 Km</td>                                                          
-                                                            <td>&#8377;40.00</td>
-                                                             <td>
-                                                                <a href="#" class="btn btn-warning btn-sm mr-2">Edit</a>
-                                                                <a href="#" class="btn btn-primary btn-sm ">Delete</a>
-                                                            </td>
                                                         </tr>
 
                                                         
-
-                                                        
-                                                       
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="col-xl-12 pt-5 font4 text-dark mb-3">
+                                    <h4>Food Order Details</h4>
+                                </div>
+                                
+                                    <div class="col-xl-12">
+                                        <div class="card ">
+                                            <div class="card-body ">
+                                                <div class="table-responsive order-table">
+                                                    <table class="table table-hover mb-0">
+                                                        
+                                                        <tbody>
+                                                            <tr >
+                                                                <td class=" py-3 px-5 ">Order ID <p class="text-primary pt-2">2268</p></td>
+                                                                <td class=" py-3 px-5" >Customer Name<p class="text-primary pt-2">Akhil Govind</p></td>
+                                                                <td class=" py-3 px-5">Phone Number<p class="text-primary pt-2">+91 7025 616 833</p></td>                                                          
+                                                                <td class=" py-3 px-5 ">Grand Total<p class="text-primary pt-2">&#8377;1160</p></td>
+                                                                
+                                                            </tr>
+                                                            <tr >
+                                                                <td class=" py-3 px-5 ">Delivery Charge <p class="text-primary pt-2">&#8377;60</p></td>
+                                                                <td class=" py-3 px-5" >CGST<p class="text-primary pt-2">2.5&#37;</p></td>
+                                                                <td class=" py-3 px-5">SGST<p class="text-primary pt-2">2.5&#37;</p></td>                                                          
+                                                                <td class=" py-3 px-5 ">Total Tax<p class="text-primary pt-2">5&#37;</p></td>
+                                                                
+                                                            </tr>
+                                                            <tr >
+                                                                <td class=" py-3 px-5 ">Order ID <p class="text-primary pt-2">2268</p></td>
+                                                                <td class=" py-3 px-5" >Customer Name<p class="text-primary pt-2">Akhil Govind</p></td>
+                                                                <td class=" py-3 px-5">Phone Number<p class="text-primary pt-2">+91 7025 616 833</p></td>                                                          
+                                                                <td class=" py-3 px-5 ">Grand Total<p class="text-primary pt-2">&#8377;1160</p></td>
+                                                                
+                                                            </tr>
+                                                            <tr >
+                                                                <td class=" py-3 px-5 ">Delivery Address<p class="text-primary pt-2">Near Victory Hospital, Gandhi 
+                                                                    Junction, Sulthan Bathery -
+                                                                     </p></td>
+                                                                <td class=" py-3 px-5" >Customer Name<p class="text-primary pt-2">Akhil Govind</p></td>
+                                                                <td class=" py-3 px-5">Phone Number<p class="text-primary pt-2">+91 7025 616 833</p></td>                                                          
+                                                                <td class=" py-3 px-5 ">Grand Total<p class="text-primary pt-2">&#8377;1160</p></td>
+                                                                
+                                                            </tr>
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                             </div>
 
         
@@ -214,6 +228,8 @@
         <script src="assets/js/waves.min.js"></script>
         <script src="assets/js/headbar.js"></script>
         <script src="assets/js/sidebar.js"></script>
+        <script src="assets/js/footer.js"></script>
+
 
         <script src="../plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
 
