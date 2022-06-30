@@ -7,10 +7,10 @@ function headbars() {
     <div class="topbar-left">
         <a href="index.html" class="logo">
             <span>
-                <img src="assets/images/logo.png" alt="" height="24">
+                <img src="assets/images/logo-light.png" alt="" height="40">
             </span>
             <i>
-                <img src="assets/images/logo-sm.png" alt="" height="22">
+                <img src="assets/images/logo.png" alt="" height="40">
             </i>
         </a>
     </div>
@@ -18,20 +18,15 @@ function headbars() {
     <nav class="navbar-custom">
 
         <ul class="navbar-right d-flex list-inline float-right mb-0">
-            <li class="dropdown notification-list d-none d-sm-block">
-                <form role="search" class="app-search">
-                    <div class="form-group mb-0"> 
-                        <input type="text" class="form-control" placeholder="Search..">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </div>
-                </form> 
-            </li>
+        
 
             <li class="dropdown notification-list">
                 <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    <i class="mdi mdi-bell noti-icon"></i>
-                    <span class="badge badge-pill badge-info noti-icon-badge">3</span>
-                </a>
+                    <span class="material-icons notifications_active material-symbols-outlined noti-icon icons">notifications_active  </span>
+                    <span class="badge badge-pill badge-info noti-icon-badge theme_clr">3</span>
+                    
+                  
+                    </a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
                     <!-- item-->
                     <h6 class="dropdown-item-text">
