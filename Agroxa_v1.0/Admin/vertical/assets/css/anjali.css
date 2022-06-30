@@ -2,18 +2,23 @@
     
     min-height: 3.5rem;
 }
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #EAEAEA;
+  color: black;
+}
 
 .button {
     background-color: #F0024F;
     border: none;
     color: white;
-    padding: 7px 25px;
+    padding: 8px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 6px;
   }
   .card-body{
     padding: 0 !important;
@@ -22,4 +27,28 @@
     background-color: #dddddd;
     padding: 15px 12px;
   }
-  
+
+.font7{
+    font-weight:700;
+} 
+.font5{
+    font-weight:500;
+}
+.font4{
+    font-weight:400;
+}
+.text_left{
+   text-align: left; 
+} 
+.text_right{
+    text-align: right; 
+ } 
+ .form-control{
+  border-radius: 6px;
+ }
+ .btn {
+  box-shadow:none !important;
+}
+.table tr , .table th{
+  border-top: none;
+}
