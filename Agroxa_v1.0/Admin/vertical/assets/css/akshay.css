@@ -42,27 +42,34 @@ body{
 .icons{
     color:#858585 !important;
 }
-.button {
+.btn {
     background-color: #F0024F;
     border: none;
     color: white;
-    padding: 5px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 6px;
+    box-shadow: none;
+    border-radius:6px;    
   }
+.grn{
+    background-color: #37E89E;
+}
+  
   .form-control{
     border-radius:6px;
   }
 
 #sidebar-menu > ul > li > a:hover{
     color: #f1e8eb !important;
-    background-color: #ac2121;
+    background-color:#F0024F !important;
+    border-radius: 6px !important;
   }
   #sidebar-menu > ul > li > a.active {
     color: #c3bfc0 !important;
-    background-color: #b22323;
+    background-color:#F0024F !important;
+    border-radius: 6px !important;
+  }
+  .table-responsive{
+    overflow-x :hidden !important;
+  }
+  .card{
+    border-radius: 6px;
   }
