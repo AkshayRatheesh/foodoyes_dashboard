@@ -39,3 +39,30 @@ body{
 .theme_clr {
     background-color: #F0024F ;
 }  
+.icons{
+    color:#858585 !important;
+}
+.button {
+    background-color: #F0024F;
+    border: none;
+    color: white;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  .form-control{
+    border-radius:6px;
+  }
+
+#sidebar-menu > ul > li > a:hover{
+    color: #f1e8eb !important;
+    background-color: #ac2121;
+  }
+  #sidebar-menu > ul > li > a.active {
+    color: #c3bfc0 !important;
+    background-color: #b22323;
+  }
