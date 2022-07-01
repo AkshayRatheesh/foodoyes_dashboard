@@ -69,18 +69,7 @@ body{
     min-height: 3.5rem;
 }
 
-#sidebar-menu > ul > li > a:hover{
-    color: #f1e8eb !important;
-    background-color:#F0024F !important;
-    border-radius: 6px !important;
-    margin: 0 4%;
-  }
-  #sidebar-menu > ul > li > a.active {
-    color: #c3bfc0 !important;
-    background-color:#F0024F !important;
-    border-radius: 6px !important;
 
-  }
   .table-responsive{
     overflow-x :hidden !important;
   }
