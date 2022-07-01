@@ -3842,6 +3842,13 @@ Invoice
     border: none !important;
   }
 }
+@media  (min-width: 370px) and (max-width: 980px) {
+  .table th{
+    padding-right: 100px;
+  }
+
+
+}
 /*# sourceMappingURL=style.css.map */
 
 .footer{
