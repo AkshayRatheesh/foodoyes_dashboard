@@ -64,7 +64,11 @@ body{
 } 
 .theme{
   color: #F0024F;
+  font-size: 100px!important;
  
+}
+.theme span {
+  font-size: 150px;
 }
 .protext{
   font-weight: 400;
@@ -75,4 +79,6 @@ body{
 .hover:hover{
  background: white;
 }
- 
+.icon1 span{
+  font-size: 200px;
+}
