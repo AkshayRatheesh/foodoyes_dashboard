@@ -3856,7 +3856,7 @@ Invoice
 }
 .btn-cust:hover,.btn-cust{
 background-color: #F0024F;
-border-radius: 6px;
+border-radius: 3px !important;
 color: #ffffff;
 }
 .btn-cust:active {
