@@ -65,6 +65,7 @@ body{
     color: #f1e8eb !important;
     background-color:#F0024F !important;
     border-radius: 6px !important;
+    margin: 0 4%;
   }
   #sidebar-menu > ul > li > a.active {
     color: #c3bfc0 !important;
