@@ -56,3 +56,23 @@ body{
 .table tr , .table th{
   border-top: none;
 }
+.icons{
+  color:#858585 !important;
+}
+.theme_clr {
+  background-color: #F0024F ;
+} 
+.theme{
+  color: #F0024F;
+ 
+}
+.protext{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #858585;
+}
+.hover:hover{
+ background: white;
+}
+ 
