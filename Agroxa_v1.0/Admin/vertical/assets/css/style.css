@@ -3843,3 +3843,7 @@ Invoice
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.footer{
+  left: 0 !important;
+}
