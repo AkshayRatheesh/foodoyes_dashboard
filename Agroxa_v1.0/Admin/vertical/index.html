@@ -67,8 +67,7 @@
                                                                         <h5>Today Orders</h5>
                                                                     </div>
                                                                     <div class="col-xl-12 text-center  font5 text-dark mb-1">
-                                                                        <h1 class="material-symbols-outlined theme">list_alt</h1>
-                                                                        <h6 class="mb-5">72</h6>
+                                                                        <span class="material-symbols-outlined theme">room_service</span>                                                                        <h6 class="mb-5">72</h6>
                                                                     </div>
                                                                     <div class="col-xl-12 text-center mt-4 font5 text-dark mb-3">
                                                                         <h6 class="protext">60% Target</h6>
@@ -87,7 +86,7 @@
                                                                         <h5>Today Orders</h5>
                                                                     </div>
                                                                     <div class="col-xl-12 text-center  font5 text-dark mb-1">
-                                                                        <h1 class="material-symbols-outlined theme">list_alt</h1>
+                                                                        <span class="material-symbols-outlined theme">list_alt</span>
                                                                         <h6 class="mb-5">72</h6>
                                                                     </div>
                                                                     <div class="col-xl-12 text-center mt-4 font5 text-dark mb-3">
@@ -107,8 +106,8 @@
                                                                     <div class="col-xl-12 font5 text-dark mb-3">
                                                                         <h5>Total Items</h5>
                                                                     </div>
-                                                                    <div class="col-xl-12 text-center  font5 text-dark mb-1">
-                                                                        <h1 class="material-symbols-outlined theme">list_alt</h1>
+                                                                    <div class="col-xl-12 text-center icon1 font5 text-dark mb-1">
+                                                                        <span class="material-symbols-outlined theme">room_service</span>
                                                                         <h6 class="mb-5">72</h6>
                                                                     </div>
                                                                     <div class="col-xl-12 text-center mt-4 font5 text-dark mb-3">
@@ -127,13 +126,48 @@
                                                                 </div>
                                                             </div>                               
                                                         </div>
-                                                        
+                                                        <!--Graph-->
+                                                        <div class="col-xl-9">
+                                                            <div class="card m-b-20">
+                                                                <div class="card-body">
+                                                                <div class="d-flex">
+
+                                                                    <div class="col-2">
+                                                                        <div class=" font5 text-dark mb-3">
+                                                                        <h5>Statistics</h5>
+                                                                        </div> 
+                                                                        <div class=" font5mb-3">
+                                                                            <h6 class=" text-muted">Orders</h6><br>
+                                                                            <h3>12,598</h3>
+                                                                        </div> 
+                                                                        <div class=" font5 mb-3">
+                                                                            <h6 class=" text-muted">Income</h6><br>
+                                                                            <h3>&#x20B9;7,285</h3>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    
+                                                                    <div class="col-9">
+                                 
+                                                                        
+                                                                        <div id="overlapping-bars" class="ct-chart ct-golden-section"></div>
+
+                                                                    </div>
+                                    
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- end col -->
+                                                        </div>
+
 
                                                         
 
+                                                        
 
 
-                                                        <div class="col-3 my-4"> 
+
+                                                        <aside class="col-3 my-4"> 
                                                             <div class="card">
                                                                 <div class="card-body"> 
                                                                     <div class="col-xl-12 font5 text-dark mb-3">
@@ -233,7 +267,7 @@
 
                                                                 </div>
                                                             </div>                               
-                                                        </div>
+                                                        </aside>
 
                                                         
 
@@ -720,6 +754,12 @@
         <script src="../plugins/raphael/raphael-min.js"></script>
 
         <script src="assets/pages/dashboard.js"></script>
+
+        <!--Chartist Chart-->
+        <script src="../plugins/chartist/js/chartist.min.js"></script>
+        <script src="../plugins/chartist/js/chartist-plugin-tooltip.min.js"></script>
+        <script src="assets/pages/chartist.init.js"></script>
+
 
         <!-- App js -->
         <script src="assets/js/app.js"></script>
