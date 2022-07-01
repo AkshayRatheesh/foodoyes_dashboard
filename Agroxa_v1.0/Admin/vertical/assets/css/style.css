@@ -3847,3 +3847,12 @@ Invoice
 .footer{
   left: 0 !important;
 }
+.btn-cust:hover,.btn-cust{
+background-color: #F0024F;
+border-radius: 6px;
+color: #ffffff;
+}
+.btn-cust:active {
+  background-color: #F0024F !important;
+
+}
