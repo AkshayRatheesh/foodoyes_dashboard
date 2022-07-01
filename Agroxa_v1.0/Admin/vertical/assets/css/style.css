@@ -3876,3 +3876,12 @@ color: #ffffff;
   margin: 1% 4%;
 
 }
+.container_back{
+  background-color:#F5F5F5 !important;
+  border-radius: 0px ;
+}
+.pagination-padding{
+  /* margin-bottom:5% !important; */
+  padding: 0 !important;
+}
+
