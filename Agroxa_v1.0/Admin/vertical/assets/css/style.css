@@ -3863,3 +3863,16 @@ color: #ffffff;
   background-color: #F0024F !important;
 
 }
+#sidebar-menu > ul > li > a:hover{
+  color: #ffffff !important;
+  background-color:#F0024F !important;
+  border-radius: 6px !important;
+  margin: 0 4%;
+}
+#sidebar-menu > ul > li > a.active {
+  color: #ffffff !important;
+  background-color:#F0024F !important;
+  border-radius: 6px !important;
+  margin: 1% 4%;
+
+}
