@@ -60,22 +60,20 @@
                                             <div class="col-12 ">
                                                 
                                                     <div class="row">
-                                                        <div class="col-3 my-4">
+                                                        
+                                        
+                                                        <div class="col-3 my-4"> 
                                                             <div class="card">
                                                                 <div class="card-body">
-                                                                    <div class="col-xl-12 font5 text-dark mb-3">
-                                                                        <h5>Today Orders</h5>
+            
+                                                                    <h4 class="mt-0 header-title">Donut Pie</h4>
+                                    
+                                    
+                                                                    <div id="donut-chart">
+                                                                        <div id="donut-chart-container" class="flot-chart flot-chart-height" style="padding: 0px; position: relative;">
+                                                                        <canvas class="flot-base" width="362" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 290px; height: 320px;"></canvas><canvas class="flot-overlay" width="362" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 290px; height: 320px;"></canvas><div class="legend"><div style="position: absolute; width: 77.875px; height: 69px; top: 50px; right: 50px; background-color: rgb(255, 255, 255); opacity: 0.85;"> </div><table style="position:absolute;top:50px;right:50px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid null;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(240,241,244);overflow:hidden"></div></div></td><td class="legendLabel"><div style="font-size:14px;">&nbsp;Desktops</div></td></tr><tr><td class="legendColorBox"><div style="border:1px solid null;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(241,108,105);overflow:hidden"></div></div></td><td class="legendLabel"><div style="font-size:14px;">&nbsp;Laptops</div></td></tr><tr><td class="legendColorBox"><div style="border:1px solid null;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(40,187,227);overflow:hidden"></div></div></td><td class="legendLabel"><div style="font-size:14px;">&nbsp;Tablets</div></td></tr></tbody></table></div></div>
                                                                     </div>
-                                                                    <div class="col-xl-12 text-center  font5 text-dark mb-1">
-                                                                        <span class="material-symbols-outlined theme">room_service</span>                                                                        <h6 class="mb-5">72</h6>
-                                                                    </div>
-                                                                    <div class="col-xl-12 text-center mt-4 font5 text-dark mb-3">
-                                                                        <h6 class="protext">60% Target</h6>
-
-                                                                        <div class="progress">
-                                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                        </div>                                                                    
-                                                                    </div>
+                                    
                                                                 </div> 
                                                             </div>                               
                                                         </div>
@@ -83,7 +81,7 @@
                                                             <div class="card">
                                                                 <div class="card-body">
                                                                     <div class="col-xl-12 font5 text-dark mb-3">
-                                                                        <h5>Today Orders</h5>
+                                                                        <h5>Today's Orders</h5>
                                                                     </div>
                                                                     <div class="col-xl-12 text-center  font5 text-dark mb-1">
                                                                         <span class="material-symbols-outlined theme">list_alt</span>
@@ -127,7 +125,7 @@
                                                             </div>                               
                                                         </div>
                                                         <!--Graph-->
-                                                        <div class="col-xl-9">
+                                                        <div class="col-xl-9 mt-0">
                                                             <div class="card m-b-20">
                                                                 <div class="card-body">
                                                                 <div class="d-flex">
@@ -160,18 +158,11 @@
                                                         </div> <!-- end col -->
                                                         </div>
 
-
-                                                        
-
-                                                        
-
-
-
                                                         <aside class="col-3 my-4"> 
                                                             <div class="card">
                                                                 <div class="card-body"> 
                                                                     <div class="col-xl-12 font5 text-dark mb-3">
-                                                                        <h5>Today Order Status</h5>
+                                                                        <h5>Today's Order Status</h5>
                                                                     </div>
                                                                     <table class="table table-borderless mb-0">
                                                                         <thead>
@@ -731,6 +722,8 @@
         <script src="assets/js/sidebar.js"></script>
         <script src="assets/js/footer.js"></script>
 
+        <script src="assets/pages/c3-chart-init.js"></script>
+
 
 
         <script src="../plugins/flot-chart/jquery.flot.min.js"></script>
@@ -743,6 +736,7 @@
         <script src="../plugins/flot-chart/curvedLines.js"></script>
         <script src="../plugins/flot-chart/jquery.flot.crosshair.js"></script>
         <script src="assets/pages/flot.init.js"></script>
+
 
 
         <script src="../plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
@@ -763,7 +757,27 @@
 
         <!-- App js -->
         <script src="assets/js/app.js"></script>
-
+        <script>
+            $(document).ready(function() {
+                var ctx = $("#chart-line");
+                var myLineChart = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ["Spring", "Summer", "Fall", "Winter"],
+                        datasets: [{
+                            data: [1200, 1700, 800, 200],
+                            backgroundColor: ["rgba(255, 0, 0, 0.5)", "rgba(100, 255, 0, 0.5)", "rgba(200, 50, 255, 0.5)", "rgba(0, 100, 255, 0.5)"]
+                        }]
+                    },
+                    options: {
+                        title: {
+                            display: true,
+                            text: 'Weather'
+                        }
+                    }
+                });
+            });
+        </script>
     </body>
 
 </html>
