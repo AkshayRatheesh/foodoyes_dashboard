@@ -67,6 +67,7 @@ body{
   font-size: 100px!important;
  
 }
+
 .theme span {
   font-size: 150px;
 }
@@ -81,4 +82,15 @@ body{
 }
 .icon1 span{
   font-size: 200px;
+}
+.ct-chart .ct-series.ct-series-b .ct-bar, .ct-chart .ct-series.ct-series-b .ct-line, .ct-chart .ct-series.ct-series-b .ct-point, .ct-chart .ct-series.ct-series-b .ct-slice-donut {
+  stroke: #F0024F;
+  stroke-width: 10px;
+  border-radius: 3px;
+}
+.ct-chart .ct-series.ct-series-a .ct-bar, .ct-chart .ct-series.ct-series-a .ct-line, .ct-chart .ct-series.ct-series-a .ct-point, .ct-chart .ct-series.ct-series-a .ct-slice-donut {
+  stroke: #D6D6D6;
+  stroke-width: 10px;
+  border-radius: 3px;
+
 }
