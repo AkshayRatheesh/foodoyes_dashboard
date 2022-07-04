@@ -70,8 +70,8 @@ body{
 }
 
 
-  .table-responsives{
-    overflow-x :hidden !important;
+  .table-responsive{
+    overflow-x :hidden ;
   }
   .card{
     border-radius: 6px;
