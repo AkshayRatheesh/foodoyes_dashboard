@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script> -->
+
+
+    <title>Document</title>
+    <style>
+body{
+
+background-color: #000;
+}
+
+.padding{
+
+padding:5rem !important;
+}
+
+.card {
+border: 0;
+border-radius: 0px;
+margin-bottom: 30px;
+-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.03);
+box-shadow: 0 2px 3px rgba(0,0,0,0.03);
+-webkit-transition: .5s;
+transition: .5s;
+}
+
+.card-header:first-child {
+border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.card-header {
+display: -webkit-box;
+display: flex;
+-webkit-box-pack: justify;
+justify-content: space-between;
+-webkit-box-align: center;
+align-items: center;
+padding: 15px 20px;
+background-color: transparent;
+border-bottom: 1px solid rgba(77,82,89,0.07);
+}
+.card-header .card-title {
+padding: 0;
+border: none;
+}
+h5.card-title {
+font-size: 15px;
+}
+
+.card-controls {
+list-style-type: none;
+padding-left: 0;
+margin-bottom: 0;
+display: -webkit-box;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: reverse;
+flex-direction: row-reverse;
+}
+
+
+.card-body {
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+padding: 1.25rem;
+}
+
+.py-20 {
+padding-top: 20px !important;
+padding-bottom: 20px !important;
+}
+
+.list-inline {
+padding-left: 0;
+list-style: none; 
+}
+
+.flexbox {
+display: -webkit-box;
+display: flex;
+-webkit-box-pack: justify;
+justify-content: space-between;
+}
+
+.mb-1{
+margin-bottom: .25rem!important;
+}
+
+.badge-dot.badge-lg {
+width: 10px;
+height: 10px;
+}
+
+.badge:empty {
+display: inline-block;
+vertical-align: inherit;
+}
+
+
+h5,span{
+
+ font-family: Roboto,sans-serif !important;
+ font-weight: 300;
+ font-size: 13px;
+}
+
+.fot{
+    /* background-color:black; */
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    border-radius: 6px;
+    width: 330px;
+    height: 330px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid d-flex justify-content-center padding">
+    
+        <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5 class="card-title">Sale by Category</strong></h5>
+                            <a href="#" data-abc="true"><i class="fa fa-ellipsis-v"></i></a>
+                      </div>
+        
+                     <div class="cover1" style="display:flex ; justify-content: space-around; align-items: center;">
+                            <div class="text-center py-20">
+                              <div data-provide="peity" data-type="donut" data-size="150" data-inner-radius="55" data-fill="#F0024F,#25AED0,#37E89E" style="display: none;">953,613,169</div><svg class="peity" height="150" width="150"><path d="M 75 0 A 75 75 0 1 1 52.146854305878314 146.43342167279437 L 58.24102649097743 127.38450922671586 A 55 55 0 1 0 75 20" fill=" #F0024F"></path><path d="M 52.146854305878314 146.43342167279437 A 75 75 0 0 1 31.9107235882174 13.613403268229668 L 43.40119729802609 29.983162396701758 A 55 55 0 0 0 58.24102649097743 127.38450922671586" fill="#25AED0"></path><path d="M 31.9107235882174 13.613403268229668 A 75 75 0 0 1 74.99999999999999 0 L 74.99999999999999 20 A 55 55 0 0 0 43.40119729802609 29.983162396701758" fill="#37E89E"></path></svg>
+                            </div>
+            
+                            <div class="ak">
+                                <ul class="list-inline">
+                                    <li class="flexbox mb-1">
+                                      <div>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #F0024F;
+                                        "></span>
+                                        <span>Orders</span>
+                                      </div>
+                                    </li>
+                  
+                                    <li class="flexbox mb-1">
+                                      <div>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #25AED0;
+                                        "></span>
+                                        <span>Deliverd</span>
+                                      </div>
+                                    </li>
+                  
+                                    <li class="flexbox">
+                                      <div>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #37E89E;
+                                        "></span>
+                                        <span>Revenew</span>
+                                      </div>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+                        <div class="fot">
+                            <div class="1">
+                                <p>Orders</p>
+                                <h2>234</h2>
+                            </div>
+                            <div class="2">
+                                <p>Deliverd</p>
+                                <h2>254</h2>                                
+                            </div>
+                            <div class="3">
+                                <p>Revenew</p>
+                                <h2>3234</h2>                                
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+        
+                  </div>
+
+    <script>
+
+
+    </script>
+</body>
+</html>
+
+
+
+
