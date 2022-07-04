@@ -3863,10 +3863,10 @@ Invoice
   padding: 15px 25px;
 }
 .table thead tr th #action1 {
-  padding: 15px 90px;
+  padding: 15px 180px 15px 12px;
 }
 .table thead tr th #four {
-  padding: 15px 77px;
+  padding: 15px 125px 15px 12px;
 }
 .table thead tr th #five {
   padding: 15px 35px;
