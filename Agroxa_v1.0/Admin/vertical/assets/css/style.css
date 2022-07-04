@@ -849,6 +849,7 @@ dt {
 .enlarged #wrapper .left.side-menu #sidebar-menu > ul > li > a i {
   font-size: 24px;
   margin-right: 20px !important;
+  
 }
 
 .enlarged #wrapper .left.side-menu #sidebar-menu ul > li {
@@ -862,6 +863,7 @@ dt {
   color: #F0024F !important;
   background-color: #f9f9f9;
 }
+
 
 .enlarged #wrapper .left.side-menu #sidebar-menu ul > li:hover > ul {
   display: block;
@@ -912,6 +914,11 @@ dt {
 .enlarged #wrapper .left.side-menu #sidebar-menu ul > li > a span {
   display: none;
   padding-left: 10px;
+  color: white;
+}
+
+.enlarged #wrapper .left.side-menu #sidebar-menu ul > li > a i:hover {
+  color: white;
 }
 
 .enlarged #wrapper .left.side-menu .user-details {
