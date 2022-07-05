@@ -3881,6 +3881,18 @@ padding: 15px 30px 15px 10px !important;
 .table thead tr th #seven {
   padding: 15px 90px 15px 12px;  } 
 
+  .order_list {
+  display: none;
+}
+.one{
+  width: 100%;
+}
+.row{
+  flex-direction: column;
+}
+.col-3{
+  width: 100%;
+}
   
 
 }
