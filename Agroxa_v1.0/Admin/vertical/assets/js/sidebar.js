@@ -17,12 +17,17 @@ function sidebar() {
                                 </a>
                             </li>
 
-                            <li>
+                           <!-- <li>
                                 <a href="order.html" class="waves-effect"><i class="material-symbols-outlined">
                                 list_alt
                                 </i><span> Orders <span class="float-right menu-arrow badge-primary fa-thin fa-plate-utensils float-right menu-arrow waves-effect"></span> </span></a>
-                            </li>
-
+                            </li>-->
+                            <li>
+                            <a href="order.html" class="waves-effect"><i class="material-symbols-outlined">
+                            list_alt
+                            </i><span>  Orders<span class="badge badge-primary float-right">3</span></span></a>
+                            
+                        </li>
                             <li>
                                 <a href="menu.html" class="waves-effect"><i class="material-symbols-outlined">
                                 room_service
@@ -51,13 +56,13 @@ function sidebar() {
                                 </i><span> Time Slot <span class="float-right menu-arrow"></span> </span></a>
                                 
                             </li>
-
+<!--
                             <li>
                                 <a href="notification.html" class="waves-effect"><i class="material-symbols-outlined">
                                 notifications_active
                                 </i><span>  Notification<span class="badge badge-primary float-right">3</span></span></a>
                                 
-                            </li>
+                            </li>-->
 
                             <li>
                                 <a href="report.html" class="waves-effect"><i class="material-symbols-outlined">
