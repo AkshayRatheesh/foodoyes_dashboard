@@ -86,7 +86,7 @@ function sidebar() {
                             <li>
                                 <a href="ourspecial.html" class="waves-effect"><i class="material-symbols-outlined">
                                 magic_button
-                                </i><span> Top selling  <span class="float-right menu-arrow"></span></span></a>
+                                </i><span> Our Specials  <span class="float-right menu-arrow"></span></span></a>
                                 
                             </li>
                         </ul>
