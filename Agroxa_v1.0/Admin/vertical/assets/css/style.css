@@ -3893,7 +3893,18 @@ padding: 15px 30px 15px 10px !important;
 .col-3{
   width: 100%;
 }
+/*report page*/
+.b{
+  display: flex !important;
+  flex-direction: column;
+}
+.k{
+  display: flex !important;
+  align-items: flex-end;
+}
+
   
+
 
 }
 /*# sourceMappingURL=style.css.map */
