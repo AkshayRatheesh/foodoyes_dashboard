@@ -187,3 +187,8 @@ overflow: hidden;
 overflow: hidden;
 overflow-y: scroll;
  }
+
+
+ .vr_border{
+  border-right: 2px dotted #e2e2e2;
+ }
