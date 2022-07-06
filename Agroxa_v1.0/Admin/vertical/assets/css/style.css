@@ -3748,6 +3748,18 @@ Invoice
 .dashboard-charts {
   height: 300px;
 }
+.one{
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: normal;
+  justify-content: center;
+  align-items: normal;
+}
+.active_inactive{
+justify-content: space-around
+
+}
+
 
 /* ======
 34. Responsive
@@ -3881,29 +3893,48 @@ padding: 15px 30px 15px 10px !important;
 .table thead tr th #seven {
   padding: 15px 90px 15px 12px;  } 
 
+ /*Index*/
   .order_list {
   display: none;
 }
-.one{
-  width: 100%;
-}
-.row{
+.r{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -965px;
+  margin-left: -14px;
   flex-direction: column;
 }
-.col-3{
-  width: 100%;
+.g{
+  
+    display: -ms-flexbox!important;
+    display: flex!important;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
+
+
+
+
+
 /*report page*/
 .b{
   display: flex !important;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: normal;
+  align-items: center;
 }
 .k{
   display: flex !important;
-  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center !important;
+  align-items: center;
 }
-
-  
 
 
 }
