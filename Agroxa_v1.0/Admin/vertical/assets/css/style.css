@@ -402,6 +402,9 @@ dt {
 .l-h-34 {
   line-height: 34px;
 }
+.font-10 {
+  font-size: 10px;
+}
 
 .font-12 {
   font-size: 12px;
@@ -3758,6 +3761,12 @@ Invoice
 .active_inactive{
 justify-content: space-around
 
+}
+
+.top1{
+  border-radius: 3px;
+  color: #1caed6;
+  
 }
 
 
