@@ -394,7 +394,10 @@ dt {
 .w-lg {
   min-width: 140px;
 }
+.l-h-21{
+  line-height: 21px;
 
+}
 .l-h-23 {
   line-height: 23px;
 }
@@ -3903,8 +3906,10 @@ padding: 15px 30px 15px 10px !important;
   padding: 15px 90px 15px 12px;  } 
 
  /*Index*/
-  .order_list {
-  display: none;
+.order_list {
+    position: relative !important;
+    top: 0px !important;
+    right: 0px !important;
 }
 .r{
   display: -ms-flexbox;
@@ -3912,7 +3917,7 @@ padding: 15px 30px 15px 10px !important;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -965px;
-  margin-left: -14px;
+  margin-left: 0;
   flex-direction: column;
 }
 .g{

@@ -190,5 +190,28 @@ overflow-y: scroll;
 
 
  .vr_border{
-  border-right: 2px dotted #e2e2e2;
+  border-right: 1px solid #DEDEDE;
+ }
+ .you{
+  background-color: #F0024F;
+  text-align: left;
+  padding-left: 0;
+ }
+ .item{
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: normal;
+  justify-content: space-around;
+  align-items: normal;
+ }
+ .item1{
+  justify-content: space-evenly;
+ }
+ .tick{
+  color: green;
+  font-size: 14px;
+ }
+ .green{
+  text-align: left;
+  padding-left: 0;
  }
