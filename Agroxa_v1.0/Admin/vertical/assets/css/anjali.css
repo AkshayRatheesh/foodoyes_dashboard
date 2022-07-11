@@ -214,4 +214,80 @@ overflow-y: scroll;
  .green{
   text-align: left;
   padding-left: 0;
+  bottom: 0;
  }
+
+.orderdetail{
+  width:25%;
+}
+.orderdetail75{
+  width: 75%;
+}
+.width5{
+  width: 41.6%;
+}
+.width3{
+  width: 33.4%;
+}
+.width2{
+  width: 11.6%;
+}
+.width1{
+  width: 9.6%;
+}
+.f16{
+  font-size: 16px;
+}
+.ordercard_left{
+  height: 301px;
+}
+.order_items {
+  width: auto;
+  height: 24.5vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F0024F; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F0024F; 
+}
+
+#progressBar {
+  width: 90%;
+  margin: 10px auto;
+  height: 22px;
+  background-color: #D6D6D6;
+  border-radius: 15px;
+}
+
+#progressBar div {
+  height: 100%;
+  text-align: right;
+  padding: 0 10px;
+  line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+  width: 0;
+  background-color: #F0024F;
+  box-sizing: border-box;
+    border-radius: 15px;
+
+}
+.deliveryboy{
+  display: flex!important;
+  align-items: center;
+  justify-content: space-around;
+}

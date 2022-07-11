@@ -3904,6 +3904,27 @@ padding: 15px 30px 15px 10px !important;
 
 .table thead tr th #seven {
   padding: 15px 90px 15px 12px;  } 
+.table thead tr th #eight {
+  padding: 15px 185px 15px 12px;
+} 
+.table thead tr th #action2 {
+  padding: 15px 54px 15px 12px;
+} 
+.orderdetail_flex{
+  flex-direction: column;
+  align-items: center;
+}
+.orderdetail{
+  width: 100% !important;
+  padding: 0 0 !important;
+}
+.checkbox1{
+  flex-direction: column;
+}
+.menubutton{
+  flex-wrap: wrap;
+}
+
 
  /*Index*/
 .order_list {
@@ -3927,6 +3948,27 @@ padding: 15px 30px 15px 10px !important;
     flex-wrap: wrap;
     flex-direction: column;
 }
+.ordercard_left{
+  flex-direction: column;
+}
+.width5 {
+  width: 100% !important;
+}
+.width3{
+  width: 100% !important;
+}
+.f16{
+  font-size: 11px;
+}
+.width2 {
+  width: 41.6% !important;
+}
+.width1 {
+  width: 32.6% !important;
+}
+.ordercard_left {
+  height: 870px !important;
+}
 
 
 
@@ -3948,6 +3990,14 @@ padding: 15px 30px 15px 10px !important;
   align-content: stretch;
   justify-content: center !important;
   align-items: center;
+}
+
+.enable{
+  display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+   
+    justify-content: space-between;
 }
 
 
