@@ -1,6 +1,6 @@
 function progress(timeleft, timetotal, $element) {
     var progressBarWidth = timeleft * $element.width() / timetotal;
-    $element.find('div').animate({ width: progressBarWidth }, 500).html(Math.floor(timeleft/60) + ":"+ timeleft%60);
+    $element.find('div').animate({ width: progressBarWidth }, 500).html("Order Ready "+Math.floor(timeleft/60) + ":"+ timeleft%60);
     if(timeleft > 0) {
         setTimeout(function() {
             progress(timeleft - 1, timetotal, $element);
@@ -8,4 +8,4 @@ function progress(timeleft, timetotal, $element) {
     }
 };
 
-progress(1200, 1200, $('#progressBar'));
+progress(60, 60, $('#progressBar'));

@@ -201,20 +201,19 @@ overflow-y: scroll;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: normal;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: normal;
  }
  .item1{
   justify-content: space-evenly;
  }
  .tick{
-  color: green;
-  font-size: 14px;
+  color: #35a989;
+  font-size: 10px;
  }
  .green{
   text-align: left;
   padding-left: 0;
-  bottom: 0;
  }
 
 .orderdetail{
@@ -239,11 +238,11 @@ overflow-y: scroll;
   font-size: 16px;
 }
 .ordercard_left{
-  height: 301px;
+  height: 270px;
 }
 .order_items {
   width: auto;
-  height: 24.5vh;
+  height: 25.88vh;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -259,12 +258,12 @@ overflow-y: scroll;
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #F0024F; 
+  background: #D6D6D6; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #F0024F; 
+  background: #D6D6D6; 
 }
 
 #progressBar {
@@ -273,6 +272,7 @@ overflow-y: scroll;
   height: 22px;
   background-color: #D6D6D6;
   border-radius: 15px;
+  color: white;
 }
 
 #progressBar div {
@@ -290,4 +290,11 @@ overflow-y: scroll;
   display: flex!important;
   align-items: center;
   justify-content: space-around;
+}
+.order_items h6{
+  margin: 5px 0;
+}
+.you h2{
+  margin: 0  0;
+  padding: 10px;
 }
