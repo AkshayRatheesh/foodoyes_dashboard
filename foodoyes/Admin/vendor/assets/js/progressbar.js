@@ -1,11 +1,35 @@
-function progress(timeleft, timetotal, $element) {
-    var progressBarWidth = timeleft * $element.width() / timetotal;
-    $element.find('div').animate({ width: progressBarWidth }, 500).html("Order Ready "+Math.floor(timeleft/60) + ":"+ timeleft%60);
-    if(timeleft > 0) {
-        setTimeout(function() {
-            progress(timeleft - 1, timetotal, $element);
-        }, 1000);
-    }
+const secondsToCount = 60 * 1;
+let timer = secondsToCount,
+    mins = 0,
+    secs = 0;
+
+const timerDisplay = document.querySelector('#timer');
+const bar = document.querySelector('#barContainer #bar');
+const textready = document.querySelector('#loading');
+
+const updateTime = function() {
+  
+  mins = Math.floor(timer / 60);
+  secs = timer % 60;
+  
+  if(secs < 10) {
+    secs = '0' + secs;
+  }
+  
+  timerDisplay.textContent = "("+ mins + ':' + secs + ")";
+  let percent = (((secondsToCount - timer) / secondsToCount) * 100);
+  
+  if(percent < 3) {
+    percent = 3;
+  }
+  
+  bar.style.width = percent + '%';
+  
+  if(timer >= 1) {
+    timer--;
+  }
 };
 
-progress(60, 60, $('#progressBar'));
+setInterval(updateTime, 1000);
+
+updateTime();
