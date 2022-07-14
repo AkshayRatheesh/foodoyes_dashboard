@@ -2,6 +2,9 @@
     
     min-height: 3.5rem;
 }
+.clear {
+  clear: both;
+}
 body{
   font-family: 'Poppins', sans-serif;
   background-color: #EAEAEA;
@@ -167,10 +170,8 @@ body{
  }
  .order_list {
   width: auto;
-  height: 86vh;
-  position: absolute;
-  top: 100px;
-  right: 25px;
+  height: 87vh;
+  position: relative;
 overflow: hidden;
 
  }
@@ -180,10 +181,8 @@ overflow: hidden;
 
 .order_list_inner {
   width: auto;
-  height: 86vh;
+  height: 100%;
   position: relative;
-  top:0;
-  right: 0;
 overflow: hidden;
 overflow-y: scroll;
  }
@@ -356,4 +355,25 @@ overflow-y: scroll;
 #bar p{
   font-size: 14px;
   margin: 4px ;
+}
+
+.alert{
+  width:100%;
+  height: 100px;
+  background: #37E89E;
+}
+.dasboard {
+  position:relative ;  
+  width: 100%;
+}
+.dasboard_left {
+  position:relative ;  
+  width: 75%;
+  float: left;
+}
+.dasboard_right {
+  position:relative ;  
+  width: 25%;
+  float: right;
+  margin: 2% 0 0;
 }
