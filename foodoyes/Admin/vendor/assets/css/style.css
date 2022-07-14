@@ -3937,7 +3937,7 @@ padding: 15px 30px 15px 10px !important;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -965px;
+  margin-right: -666px;
   margin-left: 0;
   flex-direction: column;
 }
@@ -3969,7 +3969,12 @@ padding: 15px 30px 15px 10px !important;
 .ordercard_left {
   height: 800px !important;
 }
-
+.dasboard_left {
+  width: 100% !important;
+}
+.dasboard_right {
+  width: 100% !important;
+}
 
 
 
