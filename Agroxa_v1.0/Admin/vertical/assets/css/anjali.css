@@ -208,7 +208,7 @@ overflow-y: scroll;
   justify-content: space-evenly;
  }
  .tick{
-  color: #35a989;
+  color: #37E89E;
   font-size: 10px;
  }
  .green{
@@ -297,4 +297,63 @@ overflow-y: scroll;
 .you h2{
   margin: 0  0;
   padding: 10px;
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 0.0;
+  }
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+
+#countdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  margin-bottom: 15px;
+}
+
+#loading {
+  animation: blink 30s step-start;
+}
+
+#loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  content: "\2026";
+  width: 0px;
+}
+
+#barContainer {
+  width: 85%;
+  height: 30px;
+  background-color: #EAEAEA;
+  border-radius: 15px;
+  display: flex;
+}
+
+#barContainer #bar {
+  height: 100%;
+  width: 0;
+  background-color: #F0024F;
+  border-radius: 15px;
+  display: flex;
+}
+#bar p{
+  font-size: 14px;
+  margin: 4px ;
 }
