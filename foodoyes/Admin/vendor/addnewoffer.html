@@ -21,8 +21,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        
 
-                
+      
+       
+     <!-- Javascript -->
+     <script>
+        $(function() {
+           $( "#datepicker-13" ).datepicker();
+        });
+     </script>
 
 
     </head>
@@ -281,11 +292,11 @@
 
                                                     <div class="col-md-3">
                                                         <p class="mb-1">Date From</p>
-                                                        <input type="datetime-local" class="form-control mb-5" >
-                                                        </div>
+                                                        <p>Enter Date: <input type = "text" id = "datepicker-13"></p>
+                                                    </div>
                                                     <div class="col-md-3">
                                                         <p class="mb-1">Date To</p>
-                                                        <input type="datetime-local" class="form-control mb-5" >
+                                                        <input type="datetime-local"  class="form-control mb-5">
                                                     </div>
                                                     <div class="col-md-3 mb-5">
                                                         <p class="mb-1">Category</p>
@@ -354,7 +365,6 @@
         <script src="assets/js/metisMenu.min.js"></script>
         <script src="assets/js/jquery.slimscroll.js"></script>
         <script src="assets/js/waves.min.js"></script>
-        <script src="assets/js/waves.min.js"></script>
 
 
 
@@ -370,6 +380,8 @@
 
         <!-- App js -->
         <script src="assets/js/app.js"></script>
+
+        
 
     </body>
 
