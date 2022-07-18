@@ -2,14 +2,33 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - DataTable 2 Card view</title>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css'>
 <link rel='stylesheet' href='https://cdn.datatables.net/buttons/1.2.2/css/buttons.bootstrap.min.css'><link rel="stylesheet" href="../vendor/assets/css/style.css">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<title>foodoyes - Admin Dashboard</title>
+<meta content="Admin Dashboard" name="description" />
+<meta content="Themesbrand" name="author" />
+<link rel="shortcut icon" href="assets/images/logo.png">
+
+<link rel="stylesheet" href="../plugins/morris/morris.css">
+<script src="https://kit.fontawesome.com/1544710627.js" crossorigin="anonymous"></script>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+
+
 <style>
-   body {
-margin: 2em;
-}
+
 
 .table-bordered.card {
 border: 0 !important;
@@ -19,280 +38,552 @@ display: none;
 }
 
 .card tbody tr {
-float: left;
-width: 25em;
-margin: 0.5em;
-border: 1px solid #bfbfbf;
-border-radius: 0.5em;
-background-color: transparent !important;
-box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+    float: left;
+    padding: 14px;
+    width: 21.7em;
+    height: auto;
+    margin: 0.5em;
+    /* border: 1px solid #bfbfbf; */
+    border-radius: 0.5em;
+    background-color: transparent !important;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 25%);
 }
 .card tbody tr td {
 display: block;
 border: 0;
 }
 
-p {
-text-align: center;
-color: limegreen;
-font-size: 1.5em;
-font-weight: bold;
-text-shadow: 1px 1px 2px #000;
-margin-bottom: 1.2em;
-}
 </style>
 </head>
 <body>
+
+       <!-- Begin page -->
+<div id="wrapper">
+
+        <!-- Top Bar Start -->
+<div class="topbar">
+<!-- LOGO -->
+<div class="topbar-left">
+<a href="index.html" class="logo">
+    <span>
+        <img src="assets/images/logo-light.png" alt="" height="40">
+    </span>
+    <i>
+        <img src="assets/images/logo.png" alt="" height="40">
+    </i>
+</a>
+</div>
+
+<nav class="navbar-custom">
+
+<ul class="navbar-right d-flex list-inline float-right mb-0">
+
+
+    <li class="dropdown notification-list">
+        <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+            <span class="material-icons notifications_active material-symbols-outlined noti-icon icons">notifications_active  </span>
+            <span class="badge badge-pill badge-info noti-icon-badge theme_clr">3</span>
+            
+          
+            </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+            <!-- item-->
+            <h6 class="dropdown-item-text">
+                Notifications (37)
+            </h6>
+            <div class="slimscroll notification-item-list">
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                    <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                    <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                </a>
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                    <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                </a>
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <div class="notify-icon bg-info"><i class="mdi mdi-flag"></i></div>
+                    <p class="notify-details">Your item is shipped<span class="text-muted">It is a long established fact that a reader will</span></p>
+                </a>
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                    <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                </a>
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <div class="notify-icon bg-danger"><i class="mdi mdi-message"></i></div>
+                    <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                </a>
+            </div>
+            <!-- All-->
+            <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                View all <i class="fi-arrow-right"></i>
+            </a>
+        </div>        
+    </li>
+    <li class="dropdown notification-list">
+        <div class="dropdown notification-list nav-pro-img">
+            <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                <img src="assets/images/users/user-4.jpg" alt="user" class="rounded-circle">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                <!-- item-->
+                <a class="dropdown-item" href="restaurant_settings.html"><i class="mdi mdi-account-circle m-r-5"></i> Profile</a>
+                <a class="dropdown-item d-block" href="settings.html"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings m-r-5"></i> Settings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Logout</a>
+            </div>                                                                    
+        </div>
+    </li>
+
+</ul>
+
+<ul class="list-inline menu-left mb-0">
+    <li class="float-left">
+        <button class="button-menu-mobile open-left waves-effect waves-light">
+            <i class="mdi mdi-menu"></i>
+        </button>
+    </li>                        
+    
+</ul>
+
+</nav>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- ========== Left Sidebar Start  ========== -->
+        <div class="sidebar">
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu" id="side-menu">
+                            <li class="menu-title">Main</li>
+                            <li>
+                                <a href="index.html" class="waves-effect">
+                                    <i class="material-symbols-outlined mdi">
+                                    dashboard
+                                    </i> <span> Dashboard </span>
+                                </a>
+                            </li>
+
+                           <!-- <li>
+                                <a href="order.html" class="waves-effect"><i class="material-symbols-outlined">
+                                list_alt
+                                </i><span> Orders <span class="float-right menu-arrow badge-primary fa-thin fa-plate-utensils float-right menu-arrow waves-effect"></span> </span></a>
+                            </li>-->
+                            <li>
+                            <a href="order.html" class="waves-effect"><i class="material-symbols-outlined">
+                            list_alt
+                            </i><span>  Orders<span class="badge badge-primary float-right">3</span></span></a>
+                            
+                        </li>
+                            <li>
+                                <a href="menu.html" class="waves-effect"><i class="material-symbols-outlined">
+                                room_service
+                                </i> <span> Our Menu<span class="float-right menu-arrow"></span> </span> </a>
+                                
+                            </li>
+
+                            <li>
+                                <a href="foodtime.html" class="waves-effect"><i class="material-symbols-outlined">
+                                timer
+                                </i> <span> Food Time <span class="float-right menu-arrow"></span> </span> </a>
+                                
+                            </li>
+
+                            <li>
+                                <a href="deliverycharge.html" class="waves-effect"><i class="material-symbols-outlined">
+                                directions_bike
+                                </i><span> Delivery Charge <span class="float-right menu-arrow"></span> </span></a>
+
+                                
+                            </li>
+
+                            <li>
+                                <a href="timeslot.html" class="waves-effect"><i class="material-symbols-outlined">
+                                hourglass_top
+                                </i><span> Time Slot <span class="float-right menu-arrow"></span> </span></a>
+                                
+                            </li>
+<!--
+                            <li>
+                                <a href="notification.html" class="waves-effect"><i class="material-symbols-outlined">
+                                notifications_active
+                                </i><span>  Notification<span class="badge badge-primary float-right">3</span></span></a>
+                                
+                            </li>-->
+
+                            <li>
+                                <a href="report.html" class="waves-effect"><i class="material-symbols-outlined">
+                                monitoring
+                                </i> <span> Report  <span class="float-right menu-arrow"></span></span> </a>
+                                
+                            </li>
+
+                            <li>
+                                <a href="offers.html" class="waves-effect"><i class="material-symbols-outlined">
+                                percent
+                                </i><span> Add Offers </span></a>
+                            </li>
+
+                            <li>
+                                <a href="topselling.html" class="waves-effect"><i class="material-symbols-outlined">
+                                sell
+                                </i><span> Top selling  <span class="float-right menu-arrow"></span></span></a>
+                                
+                            </li>
+                            <li>
+                                <a href="ourspecial.html" class="waves-effect"><i class="material-symbols-outlined">
+                                magic_button
+                                </i><span> Our Specials  <span class="float-right menu-arrow"></span></span></a>
+                                
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+        <!-- Left Sidebar End -->
+    </div>
+
+
+
+
+
+
+
+    <!--hh-->
+
+    <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+            <div class="container-fluid">
+
+                <div class="d-flex pl-2 pt-4 mr-2 b">
+       
+                    <div class="p-2 ml-auto">
+                        <input type="datetime-local" class="form-control" ></input>
+            
+                    </div>
+                    <div class="p-2 ">
+                        <input type="datetime-local" class="form-control" ></input>
+            
+                    </div>
+                    <div class="p-2 ">
+                        <button class="button btn-cust ">Search</button>
+            
+                    </div>
+            </div>  
+            <!-- partial:index.partial.html -->
+            <table id="example" class="table table-hover" cellspacing="0" width="100%">
+                <thead>
+                  <tr>
+                  <th scope="col">Order ID</th>
+                  <th scope="col"><span id="two" >Create Date</span></th>
+                  <th scope="col"><span id="two">Delivery Date</span></th>
+                  <th scope="col"><span id="five">Time From</span></th>
+                  <th scope="col"><span id="five">Time To</span></th>
+                  <th scope="col">Order Amount</th>
+                  <th scope="col">Customer</th>
+                  <th scope="col">Contact</th>
+                  <th scope="col">Qunitity</th>
+                  <th scope="col">Delivered By</th>
+                  <th scope="col">Payment</th>
+            
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr style="background-color: #FFEAE4;">
+                      
+                      <td > 2921</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>                                                            
+                      <td>Akshay</td>
+                      <td>Ineligible</td>
+            
+                  </tr>
+                  <tr>
+                      
+                      <td > 2921</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Eligible</td>
+                  </tr>
+                  <tr>
+                      
+                      <td > 2921</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Eligible</td>
+                  </tr>
+                  <tr style="background-color: #FFEAE4;">
+                      
+                      <td > 2921</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Ineligible</td>
+                  </tr>
+                  <tr>
+                      
+                      <td > 2921</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Eligible</td>
+                  </tr>
+                  <tr>
+                      
+                      <td > 2921</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Eligible</td>
+                  </tr>
+                  <tr>
+                      
+                      <td > 2921</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Eligible</td>
+                  </tr>
+                  <tr>
+                      
+                      <td > 2921</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Eligible</td>
+                  </tr>
+                  <tr>
+                      
+                      <td > 2921</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Eligible</td>
+                  </tr>
+                  <tr>
+                      
+                      <td > 2921</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Eligible</td>
+                  </tr>
+                  <tr>
+                      
+                      <td > 2921</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Eligible</td>
+                  </tr>
+                  <tr>
+                      
+                      <td > 2921</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Eligible</td>
+                  </tr>
+                  <tr>
+                      
+                      <td > 2925</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Eligible</td>
+                  </tr>
+                  <tr style="background-color: #FFEAE4;">
+                      
+                      <td > 2926</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Ineligible</td>
+                  </tr>
+                  <tr>
+                      
+                      <td > 2927</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Eligible</td>
+                  </tr>
+                  <tr>
+                      
+                      <td > 2928</td>
+                      <td>2022-06-22 </td>                                                          
+                      <td>2022-06-22 </td>
+                      <td>10.00 AM</td>
+                      <td>10.00 AM</td>
+                      <td>&#8377;450.00</td>
+                      <td>Akhil</td>
+                      <td>7025616833</td>
+                      <td>2</td>
+                      <td>Akshay</td>
+                      <td>Eligible</td>
+                  </tr>
+            
+                  
+                 
+              </tbody>
+            </table>
+
+            </div>
+        </div>
+    </div>    
+
+
+
+
+
+
    
-<!-- partial:index.partial.html -->
-<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
-	<thead>
-      <tr>
-      <th scope="col">Order ID</th>
-      <th scope="col"><span id="two" >Create Date</span></th>
-      <th scope="col"><span id="two">Delivery Date</span></th>
-      <th scope="col"><span id="five">Time From</span></th>
-      <th scope="col"><span id="five">Time To</span></th>
-      <th scope="col">Order Amount</th>
-      <th scope="col">Customer</th>
-      <th scope="col">Contact</th>
-      <th scope="col">Qunitity</th>
-      <th scope="col">Delivered By</th>
-      <th scope="col">Payment</th>
 
-      </tr>
-  </thead>
-  <tbody>
-      <tr style="background-color: #FFEAE4;">
-          
-          <td > 2921</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>                                                            
-          <td>Akshay</td>
-          <td>Ineligible</td>
+<footer class="footer">
+    © 2022 Foodoyes Apps Pvt Ltd<span class="d-none d-sm-inline-block">- All Rights Reserved.</span>
+</footer>
+</div>
 
-      </tr>
-      <tr>
-          
-          <td > 2921</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Eligible</td>
-      </tr>
-      <tr>
-          
-          <td > 2921</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Eligible</td>
-      </tr>
-      <tr style="background-color: #FFEAE4;">
-          
-          <td > 2921</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Ineligible</td>
-      </tr>
-      <tr>
-          
-          <td > 2921</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Eligible</td>
-      </tr>
-      <tr>
-          
-          <td > 2921</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Eligible</td>
-      </tr>
-      <tr>
-          
-          <td > 2921</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Eligible</td>
-      </tr>
-      <tr>
-          
-          <td > 2921</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Eligible</td>
-      </tr>
-      <tr>
-          
-          <td > 2921</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Eligible</td>
-      </tr>
-      <tr>
-          
-          <td > 2921</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Eligible</td>
-      </tr>
-      <tr>
-          
-          <td > 2921</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Eligible</td>
-      </tr>
-      <tr>
-          
-          <td > 2921</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Eligible</td>
-      </tr>
-      <tr>
-          
-          <td > 2925</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Eligible</td>
-      </tr>
-      <tr style="background-color: #FFEAE4;">
-          
-          <td > 2926</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Ineligible</td>
-      </tr>
-      <tr>
-          
-          <td > 2927</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Eligible</td>
-      </tr>
-      <tr>
-          
-          <td > 2928</td>
-          <td>2022-06-22 </td>                                                          
-          <td>2022-06-22 </td>
-          <td>10.00 AM</td>
-          <td>10.00 AM</td>
-          <td>&#8377;450.00</td>
-          <td>Akhil</td>
-          <td>7025616833</td>
-          <td>2</td>
-          <td>Akshay</td>
-          <td>Eligible</td>
-      </tr>
 
-      
-     
-  </tbody>
-</table>
+<!-- ============================================================== -->
+<!-- End Right content here -->
+<!-- ============================================================== -->
+
+
+</div>
+<!-- END wrapper -->
+
+
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/metisMenu.min.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/waves.min.js"></script>
+<script src="assets/js/waves.min.js"></script>
+
+
+<script src="../plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+<!-- Peity JS -->
+<script src="../plugins/peity/jquery.peity.min.js"></script>
+
+<script src="../plugins/morris/morris.min.js"></script>
+<script src="../plugins/raphael/raphael-min.js"></script>
+
+<script src="assets/pages/dashboard.js"></script>
+
+<!-- App js -->
+<script src="assets/js/app.js"></script>
+
+
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script src='https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js'></script>
