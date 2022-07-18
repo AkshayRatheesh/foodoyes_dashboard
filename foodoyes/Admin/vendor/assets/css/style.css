@@ -4526,3 +4526,15 @@ margin: 2% 0 0;
   border-top: none;
   height: 60px;
 }
+
+
+
+.form-inline {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
