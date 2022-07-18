@@ -4590,3 +4590,12 @@ input:checked + .slider:before {
     overflow-x :scroll ;
 } 
 /* toggle button end*/
+.form-inline {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
