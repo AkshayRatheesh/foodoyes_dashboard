@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	//Only needed for the filename of export files.
 	//Normally set in the title tag of your page.
-	document.title = "Card View DataTable";
+	document.title = "Foodoyes Report";
 	// DataTable initialisation
 	$("#example").DataTable({
 		dom: '<"dt-buttons"Bf><"clear">lirtp',
@@ -17,7 +17,7 @@ $(document).ready(function () {
 		],
 		initComplete: function (settings, json) {
 			$(".dt-buttons .btn-group").append(
-				'<a id="cv" class="btn btn-info" href="#">CARD VIEW</a>'
+				'<a id="cv" class="btn btn-cust" href="#">CARD VIEW</a>'
 			);
 			$("#cv").on("click", function () {
 				if ($("#example").hasClass("card")) {

@@ -3984,6 +3984,18 @@ padding: 15px 30px 15px 10px !important;
 .dasboard_right {
   width: 100% !important;
 }
+div.dt-buttons {
+  float: none;
+  /* width: 89%; */
+  display: flex;
+  text-align: center;
+  margin-bottom: 0.5em;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+}
 
 
 
@@ -4595,7 +4607,33 @@ input:checked + .slider:before {
   display: flex;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -ms-flex-align: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: row-reverse;
+  align-items: flex-start
+}
+.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  margin: 2px;
+  background: #25aed0;
+  color: white;
+  border-radius: 3px;
+}
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  margin: 2px;
+  background: #25aed0;
+  color: white;
+  border-radius: 3px;
+}
+.form-inline label {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 13px;
+  -ms-flex-pack: center;
+  margin-bottom: 0;
+  justify-content: flex-end;
+}
+div.dataTables_wrapper div.dataTables_info {
+  padding-top: 17px;
+  white-space: nowrap;
 }

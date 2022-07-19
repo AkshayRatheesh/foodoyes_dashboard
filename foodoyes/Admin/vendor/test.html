@@ -52,6 +52,14 @@ display: none;
 display: block;
 border: 0;
 }
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    .card tbody tr {
+    width: 96% !important;
+
+    }
+
+}
+
 
 </style>
 </head>
@@ -273,11 +281,11 @@ border: 0;
                 <div class="d-flex pl-2 pt-4 mr-2 b">
        
                     <div class="p-2 ml-auto">
-                        <input type="datetime-local" class="form-control" ></input>
+                        <input type="datetime-local" class="form-control"  style="height: calc(3.25rem + 2px);" ></input>
             
                     </div>
                     <div class="p-2 ">
-                        <input type="datetime-local" class="form-control" ></input>
+                        <input type="datetime-local" class="form-control" style="height: calc(3.25rem + 2px);"  ></input>
             
                     </div>
                     <div class="p-2 ">
