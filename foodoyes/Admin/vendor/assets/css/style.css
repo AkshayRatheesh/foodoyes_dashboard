@@ -3879,10 +3879,11 @@ justify-content: space-around
 }
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
 
-  .table-responsive {
+  
+.table-responsive {
     overflow-x: auto !important;
   }
-    .table thead tr th #action{
+.table thead tr th #action{
     padding: 15px 360px 15px 12px;
   }
 .table thead tr th #one {
@@ -3997,9 +3998,6 @@ div.dt-buttons {
   align-items: center;
 }
 
-
-
-
 /*report page*/
 .b{
   display: flex !important;
@@ -4020,12 +4018,10 @@ div.dt-buttons {
 
 .enable{
   display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-   
-    justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 
 }
 /*# sourceMappingURL=style.css.map */
@@ -4139,9 +4135,7 @@ body{
 }
 
 
-.table-responsive{
-  overflow-x : hidden !important ;
-}
+
 .card{
   border-radius: 6px;
 }
@@ -4151,8 +4145,7 @@ tr {
 
 
 /*anjali*/
-.custom-control {
-    
+.custom-control {   
   min-height: 3.5rem;
 }
 .clear {
@@ -4176,9 +4169,7 @@ color: black;
   cursor: pointer;
   border-radius: 3px !important;
 }
-.card-body{
-  
-}
+
 .table thead th{
   background-color: #dddddd;
   padding: 15px 12px 15px 24px !important;
@@ -4187,7 +4178,7 @@ color: black;
   padding: 1px 12px 1px 24px;
 }
 .card{
-  overflow:hidden;
+  overflow:hidden !important;
   border-radius: 6px;
 }
 
@@ -4636,4 +4627,7 @@ input:checked + .slider:before {
 div.dataTables_wrapper div.dataTables_info {
   padding-top: 17px;
   white-space: nowrap;
+}
+.table-responsive {
+  overflow-x: hidden;
 }
