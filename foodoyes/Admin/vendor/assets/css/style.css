@@ -3879,7 +3879,7 @@ justify-content: space-around
 }
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
 
-  
+
 .table-responsive {
     overflow-x: auto !important;
   }
@@ -4631,3 +4631,4 @@ div.dataTables_wrapper div.dataTables_info {
 .table-responsive {
   overflow-x: hidden;
 }
+
