@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>foodoyes - Admin Dashboard</title>
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <link rel="shortcut icon" href="assets/images/logo.png">
+
+        <link rel="stylesheet" href="../plugins/morris/morris.css">
+        <script src="https://kit.fontawesome.com/1544710627.js" crossorigin="anonymous"></script>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+                
+
+
+    </head>
+
+    <body>
+    <!-- ============================================================== -->
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+<!-- LOGO -->
+<div class="topbar-left">
+    <a href="index.html" class="logo">
+        <span>
+            <img src="assets/images/logo-light.png" alt="" height="40">
+        </span>
+        <i>
+            <img src="assets/images/logo.png" alt="" height="40">
+        </i>
+    </a>
+</div>
+
+<nav class="navbar-custom">
+
+    <ul class="navbar-right d-flex list-inline float-right mb-0">
+    
+
+        <li class="dropdown notification-list">
+            <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                <span class="material-icons notifications_active material-symbols-outlined noti-icon icons">notifications_active  </span>
+                <span class="badge badge-pill badge-info noti-icon-badge theme_clr">3</span>
+                
+              
+                </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                <!-- item-->
+                <h6 class="dropdown-item-text">
+                    Notifications (37)
+                </h6>
+                <div class="slimscroll notification-item-list">
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                        <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                    </a>
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                    </a>
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <div class="notify-icon bg-info"><i class="mdi mdi-flag"></i></div>
+                        <p class="notify-details">Your item is shipped<span class="text-muted">It is a long established fact that a reader will</span></p>
+                    </a>
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                    </a>
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <div class="notify-icon bg-danger"><i class="mdi mdi-message"></i></div>
+                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                    </a>
+                </div>
+                <!-- All-->
+                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                    View all <i class="fi-arrow-right"></i>
+                </a>
+            </div>        
+        </li>
+        <li class="dropdown notification-list">
+            <div class="dropdown notification-list nav-pro-img">
+                <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                    <img src="assets/images/users/user-4.jpg" alt="user" class="rounded-circle">
+                </a>
+                <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                    <!-- item-->
+                    <a class="dropdown-item" href="restaurant_settings.html"><i class="mdi mdi-account-circle m-r-5"></i> Profile</a>
+                    <a class="dropdown-item d-block" href="settings.html"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings m-r-5"></i> Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Logout</a>
+                </div>                                                                    
+            </div>
+        </li>
+
+    </ul>
+
+    <ul class="list-inline menu-left mb-0">
+        <li class="float-left">
+            <button class="button-menu-mobile open-left waves-effect waves-light">
+                <i class="mdi mdi-menu"></i>
+            </button>
+        </li>                        
+        
+    </ul>
+
+</nav>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ========== Left Sidebar Start  ========== -->
+            <div class="sidebar">
+                <div class="left side-menu">
+                    <div class="slimscroll-menu" id="remove-scroll">
+    
+                        <!--- Sidemenu -->
+                        <div id="sidebar-menu">
+                            <!-- Left Menu Start -->
+                            <ul class="metismenu" id="side-menu">
+                                <li class="menu-title">Main</li>
+                                <li>
+                                    <a href="index.html" class="waves-effect">
+                                        <i class="material-symbols-outlined mdi">
+                                        dashboard
+                                        </i> <span> Dashboard </span>
+                                    </a>
+                                </li>
+    
+                               <!-- <li>
+                                    <a href="order.html" class="waves-effect"><i class="material-symbols-outlined">
+                                    list_alt
+                                    </i><span> Orders <span class="float-right menu-arrow badge-primary fa-thin fa-plate-utensils float-right menu-arrow waves-effect"></span> </span></a>
+                                </li>-->
+                                <li>
+                                <a href="add_country_state.html" class="waves-effect"><i class="material-symbols-outlined">
+                                    travel_explore
+                                </i><span>  Add Country & State<span class="float-right menu-arrow"></span> </span></a>
+                                
+                            </li>
+                                <li>
+                                    <a href="add_district_city.html" class="waves-effect"><i class="material-symbols-outlined">
+                                        location_city
+                                    </i> <span>Add District & City<span class="float-right menu-arrow"></span> </span> </a>
+                                    
+                                </li>
+    
+                                <li>
+                                    <a href="recent_media.html.html" class="waves-effect"><i class="material-symbols-outlined">
+                                        perm_media
+ 
+                                    </i> <span> Recent Media <span class="float-right menu-arrow"></span> </span> </a>
+                                    
+                                </li>
+    
+                                <li>
+                                    <a href="total_order.html" class="waves-effect"><i  class="material-symbols-outlined">
+                                        list_alt
+                                    </i><span> Total Orders <span class="float-right menu-arrow"></span> </span></a>
+    
+                                    
+                                </li>
+    
+                                <li>
+                                    <a href="restaurants.html" class="waves-effect"><i  class="material-symbols-outlined">
+                                        storefront
+                                    </i><span> Restaurants <span class="float-right menu-arrow"></span> </span></a>
+                                    
+                                </li>
+
+    
+                                <li>
+                                    <a href="food_category.html" class="waves-effect"><i  class="material-symbols-outlined">
+                                        category
+                                    </i> <span> Food Category  <span class="float-right menu-arrow"></span></span> </a>
+                                    
+                                </li>
+    
+                                <li>
+                                    <a href="food_varients.html" class="waves-effect"><i class="material-symbols-outlined">
+                                        join_inner
+                                    </i><span> Food Varients </span></a>
+                                </li>
+    
+                                <li>
+                                    <a href="add_promotion.html" class="waves-effect"><i class="material-symbols-outlined">
+                                        military_tech
+                                    </i><span> Add Promotion <span class="float-right menu-arrow"></span></span></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="delivery_partners.html" class="waves-effect"><i class="material-symbols-outlined">
+                                        directions_bike
+                                    </i><span>Delivery Partners  <span class="float-right menu-arrow"></span></span></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="coupons.html" class="waves-effect"><i class="material-symbols-outlined">
+                                        sell
+                                    </i><span> Coupons<span class="float-right menu-arrow"></span></span></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="tags.html" class="waves-effect"><i  class="material-symbols-outlined">
+                                        tag
+                                    </i><span>Tags<span class="float-right menu-arrow"></span></span></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="users.html" class="waves-effect"><i  class="material-symbols-outlined">
+                                        person_search
+                                    </i><span> Users <span class="float-right menu-arrow"></span></span></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="marketing_partners.html" class="waves-effect"><i  class="material-symbols-outlined">
+                                        diversity_2
+                                    </i><span> Marketing Partners<span class="float-right menu-arrow"></span></span></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="notification.html" class="waves-effect"><i class="material-symbols-outlined">
+                                        notifications_active
+                                    </i><span> Notification <span class="float-right menu-arrow"></span></span></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="user_notification.html" class="waves-effect"><i  class="material-symbols-outlined">
+                                        person_pin_circle
+                                    </i><span> User Notification <span class="float-right menu-arrow"></span></span></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="add_special_offers.html" class="waves-effect"><i  class="material-symbols-outlined">
+                                        percent
+                                    </i><span> Add Spicial Offers <span class="float-right menu-arrow"></span></span></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="customer_review.html" class="waves-effect"><i class="material-symbols-outlined">
+                                    magic_button
+                                    </i><span> Customer Review <span class="float-right menu-arrow"></span></span></a>
+                                    
+                                </li>
+                            </ul>
+    
+                        </div>
+                        <!-- Sidebar -->
+                        <div class="clearfix"></div>
+    
+                    </div>
+                    <!-- Sidebar -left -->
+    
+                </div>
+            <!-- Left Sidebar End -->
+            </div>
+
+    <!-- ============================================================== -->
+
+
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid ">
+                            
+                        
+                            <div class="col-xl-12 pt-5 font4 text-dark mb-3">
+                                <h4>Food Details</h4>
+                            </div>
+                            
+                                <div class="col-xl-12">
+                                    <div class="card">
+                                        <div class="card-body"  style="padding:0 !important">
+                                            <div class="table-responsive order-table">
+                                                <table class="table table-hover mb-0">
+                                                    <thead class="text-dark font-weight-bold">
+                                                        <tr>
+                                                        <th scope="col">Item Name</th>
+                                                        <th scope="col">Unit</th>
+                                                        <th scope="col">Quantity</th>
+                                                        <th scope="col" >Price</th>
+                                                        <th scope="col" >Custom Message</th>
+                                                        <th scope="col" >Total</th>
+
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            
+                                                            <td >Masala Dosa</td>
+                                                            <td>Protion</td>                                                          
+                                                            <td>2</td>
+                                                            <td>&#8377;150</td>
+                                                            <td>More Masala</td>
+                                                            <td>&#8377;300</td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            
+                                                            <td >Beef</td>
+                                                            <td>Half Portion</td>                                                          
+                                                            <td>2</td>
+                                                            <td>&#8377;250</td>
+                                                            <td>Spicey</td>
+                                                            <td>&#8377;300</td>
+
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            
+                                                            <td>Chicken Masala</td>
+                                                            <td>Protion</td>                                                          
+                                                            <td>1</td>
+                                                            <td>&#8377;300</td>
+                                                            <td>Some Sweety</td>
+                                                            <td>&#8377;300</td>
+
+
+                                                        </tr>
+
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12 pt-5 font4 text-dark mb-3">
+                                    <h4>Food Order Details</h4>
+                                </div>
+                                
+                                    <div class="col-xl-12 ">
+                                        <div class="card ">
+                                            <div class="card-body ">
+                                                <div class="d-flex  px-5 pt-4 orderdetail_flex">
+                                                    <div class=" py-2  orderdetail">Order ID <p class="text-primary pt-2">2268</p></div>
+                                                    <div class="  py-2 orderdetail" >Customer Name<p class="text-primary pt-2">Akhil Govind</p></div>
+                                                    <div class="  py-2 orderdetail ">Phone Number<p class="text-primary pt-2">+91 7025 616 833</p></div>
+                                                    <div class="py-2  orderdetail">Grand Total<p class="text-primary pt-2">&#8377;1160</p></div>
+                                                </div>
+
+                                                <div class="d-flex  px-5 orderdetail_flex">
+                                                    <div class="  py-2 orderdetail">Delivery Charge <p class="text-primary pt-2">&#8377;60</p></div>
+                                                    <div class="  py-2 orderdetail">CGST<p class="text-primary pt-2">2.5&#37;</p></div>
+                                                    <div class="  py-2 orderdetail">SGST<p class="text-primary pt-2">2.5&#37;</p></div>
+                                                    <div class="  py-2 orderdetail ">Total Tax<p class="text-primary pt-2">5&#37;</p></div>
+                                                </div>
+                                                <div class="d-flex  px-5 orderdetail_flex">
+                                                    <div class="  py-2 orderdetail">Delivery Partner<p class="text-primary pt-2">Unique Riders</p></div>
+                                                    <div class="  py-2 orderdetail">Delivery Date<p class="text-primary pt-2">228/07/2022</p></div>
+                                                    <div class="  py-2 orderdetail">Location<p class="text-primary pt-2">Wayanad</p></div>
+                                                    <div class="  py-2 orderdetail">LandMark<p class="text-primary pt-2">Near Municipality</p></div>
+                                                </div>
+                                                <div class="d-flex orderdetail_flex px-5">
+                                                    <div class=" orderdetail py-2 ">Delivery Address<p class="text-primary pt-2">Near Victory Hospital,<br> Gandhi Junction,<br> Sulthan Bathery</p></div>
+                                                    <div class=" orderdetail75 py-2">Click Below to Order Satus For Customer :
+                                                        <div class="d-flex checkbox1 pt-2">
+                                                            <div class="form-check orderdetail">
+                                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                <label class="form-check-label" for="defaultCheck1">Order Recived</label>
+                                                            </div>
+                                                            <div class="form-check orderdetail">
+                                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                <label class="form-check-label" for="defaultCheck1">Order Accepted</label>
+                                                            </div>
+                                                            <div class="form-check orderdetail">
+                                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                <label class="form-check-label" for="defaultCheck1">Order Preparing</label>
+                                                            </div>
+                                                            <div class="form-check orderdetail">
+                                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                <label class="form-check-label" for="defaultCheck1">Out Of Delivery</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex checkbox1 pt-1">
+                                                            <div class="form-check orderdetail">
+                                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                <label class="form-check-label" for="defaultCheck1">Order Deliverd</label>
+                                                            </div>
+                                                            <div class="form-check orderdetail">
+                                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                <label class="form-check-label" for="defaultCheck1">Order Rejected</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--delivery partner details-->
+                                    <div class="col-xl-12 pt-5 font4 text-dark mb-3">
+                                        <h4>Delivery partner details</h4>
+                                    </div>
+                                    
+                                        <div class="col-xl-12 ">
+                                            <div class="card ">
+                                                <div class="card-body ">
+                                                    <div class="d-flex  px-5 pt-4 orderdetail_flex text-center">
+                                                        <div class=" py-2  orderdetail">
+                                                            <img src="assets/images/download.png" style="width:50px; height:50px;"class="rounded-circle ">
+
+                                                        </div>
+                                                        <div class=" py-2  orderdetail">Delivery Partner ID <p class="text-primary pt-2">2268</p></div>
+                                                        <div class="  py-2 orderdetail" >Delivery partner Name<p class="text-primary pt-2">Akhil Govind</p></div>
+                                                        <div class="  py-2 orderdetail ">Phone Number<p class="text-primary pt-2">+91 7025 616 833</p></div>
+                                                        <div class="py-2  orderdetail">Arriving In<p class="text-primary pt-2">10 min.</p></div>
+                                                        <div class="py-2  orderdetail">Estimation Time<p class="text-primary pt-2">10 min.</p></div>
+                                                    </div>
+    
+                                                  
+                                                   
+    
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                    
+                            </div>
+
+        
+                        </div>
+                        <!-- end page content-->
+
+                    </div> <!-- container-fluid -->
+
+                </div> <!-- content -->
+
+                <footer class="footer">
+                    © 2022 Foodoyes Apps Pvt Ltd<span class="d-none d-sm-inline-block">- All Rights Reserved.</span>
+                </footer>
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+            
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+
+
+
+        <script src="../plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+        <!-- Peity JS -->
+        <script src="../plugins/peity/jquery.peity.min.js"></script>
+
+        <script src="../plugins/morris/morris.min.js"></script>
+        <script src="../plugins/raphael/raphael-min.js"></script>
+
+        <script src="assets/pages/dashboard.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+
+</html>
